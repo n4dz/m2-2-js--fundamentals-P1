@@ -42,7 +42,7 @@ Strings have a bunch of methods and properties that will be immediately useful. 
 
 ```js
 // Example
-const sentiment = 'I love programming';
+const sentiment = "I love programming";
 sentiment.length;
 ```
 
@@ -56,7 +56,7 @@ It takes 2 parameters, the value to replace and the new value.
 
 ```js
 // Example
-const sentiment = 'I love programming';
+const sentiment = "I love programming";
 ```
 
 ---
@@ -69,7 +69,7 @@ const sentiment = 'I love programming';
 
 ```js
 // Example
-const sentiment = 'I love programming';
+const sentiment = "I love programming";
 ```
 
 ---
@@ -83,6 +83,8 @@ The `.includes()` method tells us if a string includes another string
 let sentence = "Let's have a pizza party!";
 ```
 
+<!-- Case sentitive  -->
+
 ---
 
 ### [`.split()`](https://www.w3schools.com/jsreF/jsref_split.asp)
@@ -91,7 +93,7 @@ The `.split()` method "split" a string into an array of _substrings_.
 
 ```js
 // Example
-const truth = 'The greatest teacher, failure is.';
+const truth = "The greatest teacher, failure is.";
 ```
 
 ---
@@ -105,10 +107,12 @@ This method returns -1 if the value to search for never occurs.
 ```js
 // Example
 let yodaSpeak =
-  'Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.';
+  "Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.";
 ```
 
 _Why would JavaScript decide to return `-1` instead of some other value? like `0`?_
+
+<!-- the string dosen"t contain substring -->
 
 ---
 
@@ -119,10 +123,17 @@ Turn an input string into another string
 ---
 
 ```js
-const input = 'I am a really long sentence, look how many words I have!';
+const input = "I am a really long sentence, look how many words I have!";
 
 // output: "sentence, look how"
 ```
+
+<!-- const input = 'I am a really long sentence, look how many words I have!';
+const thingIWantToProduce = "sentence, look how"
+let startIndex = input.indexOf(thingIWantToProduce)
+startIndex
+19
+input.slice(startIndex, startIndex + thingIWantToProduce.lenght) -->
 
 ---
 
@@ -133,19 +144,28 @@ We'll test the **breakout rooms** feature 😀
 ---
 
 ```js
-const input = 'Hi World';
+const input = "Hi World";
 
 // output: "Hello world!"
+
+input.replace("Hi", "Hello") + "!";
+// or input.replace('Hi, 'Hello').concat ('!')
 ```
 
 ```js
-const input = 'I am 23 years old!';
+const input = "I am 23 years old!";
 
 // output: "I am old!"
+
+const output = input.replace("23 years ", " ");
+console.log(output);
+// const output = input.slice(0, 4) + input.slice(13);
+//  or const output = input.slice(0, 4) + ' ' + input.slice(14);
+// console.log(output);
 ```
 
 ```js
-const input = 'How are you today?';
+const input = "How are you today?";
 
 // output: ["how", "are", "you", "yesterday?"]
 ```
