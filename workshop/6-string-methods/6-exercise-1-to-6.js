@@ -8,27 +8,28 @@
 // When this exercise is complete, it should write all of the answers to the console one after the other.
 
 // Given the following data to answer the questions.
-const smartGuy = 'Rick Sanchez';
-const rickSaying = 'wubba lubba dub dub';
-const grandson = 'Morty Antoine Smith';
+const smartGuy = "Rick Sanchez";
+const rickSaying = "wubba lubba dub dub";
+const grandson = "Morty Antoine Smith";
 const enemies =
-  'Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova';
+  "Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova";
 const alternateRicks =
-  'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
+  "Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137";
 const secret =
   "summerlobaconokfamily ascaryt mintergalactice, I'jerrym Pimortybethckle Rick!";
 const notCode = [
-  'summer',
-  'bacon',
-  'scary',
-  'intergalactic',
-  'jerry',
-  'morty',
-  'beth',
-  'family',
+  "summer",
+  "bacon",
+  "scary",
+  "intergalactic",
+  "jerry",
+  "morty",
+  "beth",
+  "family",
 ];
 
 //
+
 //
 //
 //
@@ -39,7 +40,7 @@ const notCode = [
 //     this first question is solved for you, as a demonstration
 //     of how this works)
 //
-const mortyNamesArray = grandson.split(' ');
+const mortyNamesArray = grandson.split(" ");
 const numberOfNames = mortyNamesArray.length;
 console.log(`A1) Morty has ${numberOfNames} names`);
 
