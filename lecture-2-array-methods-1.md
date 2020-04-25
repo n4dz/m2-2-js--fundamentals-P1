@@ -74,7 +74,8 @@ Let's dip into the internet and see if we can learn all of these methods collect
 
 1. `.includes()`, `.slice()`
 2. `.indexOf()`, `.push()`
-<!-- The push() method adds new items to the end of an array, and returns the new length. -->
+
+The push() method adds new items to the end of an array, and returns the new length.
 
 <!-- The indexOf() method searches the array for the specified item, and returns its position. -->
 
