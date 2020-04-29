@@ -29,8 +29,6 @@ const notCode = [
 ];
 
 //
-
-//
 //
 //
 // Q1
@@ -52,7 +50,9 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Convert the alternateRicks string to an array, so that each name ("Simple
 // Rick") is an element in that array. Log that array to the console.
 
-//
+const alternateRicksArray = alternateRicks.split(", ");
+console.log(alternateRicksArray);
+
 //
 //
 //
@@ -60,12 +60,35 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // How many Ricks have been named in alternateRicks?
 // HINT: There are multiple ways to solve this one. Maybe try a `for` loop!
 
-//
+//1.Creat Array from string
+
+const alternateRicksArray = alternateRicks.split(", ");
+let CountRick = 0;
+//List element inside Array with a loop
+for (
+  let Ricksindex = 0;
+  Ricksindex < alternateRicksArray.length;
+  Ricksindex++
+) {
+  if (alternateRicksArray[Ricksindex].includes("Rick")) {
+    CountRick++;
+  }
+}
+console.log(CountRick);
+
 //
 //
 //
 // Q4
 // How many characters are there in rickSaying (without spaces)?
+
+const rickSayingArray = rickSaying.split(" ");
+let CountQ4 = 0;
+for (let IndexQ4 = 0; IndexQ4 < rickSayingArray.length; IndexQ4++) {
+  console.log(rickSayingArray[IndexQ4].length);
+  CountQ4 += rickSayingArray[IndexQ4].length;
+}
+console.log(CountQ4);
 
 //
 //
@@ -75,12 +98,18 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // It turns out, Morty doesn't actually have a middle name. The `grandson`
 // string is wrong! Console Morty's name without "Antoine".
 
+const MortyName = grandson.replace("Antoine", " ");
+console.log(MortyName);
+
 //
 //
 //
 //
 // Q6
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
+
+const ScaryTFriend = enemies.replace("Scary Terry,", "");
+console.log(ScaryTFriend);
 
 //
 //
