@@ -14,7 +14,12 @@
 // For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
 
 function greetLong(lst) {
-  // lst is an array of strings
+  let LongNames = lst.filter(function (name) {
+    return name.length >= 4;
+  });
+  return LongNames.map(function (name) {
+    return "Hello " + name;
+  });
 }
 // -------------------------------------------------------------------------
-console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));
+console.log("Q7 greetLong()", greetLong(["Scott", "Bob", "Ric", "Jim"]));

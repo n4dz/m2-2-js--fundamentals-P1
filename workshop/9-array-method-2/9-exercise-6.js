@@ -11,9 +11,12 @@
 // Q6
 // Adds "Hello " to every element of greet
 // For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
+//https://www.w3schools.com/jsref/jsref_map.asp
 
 function greet(lst) {
-  // lst is an array of strings
+  return lst.map(function (name) {
+    return (name = "Hello " + name);
+  });
 }
 
-console.log('Q6 greet()', greet(['David', 'Billy', 'Lisa', 'Jennifer']));
+console.log("Q6 greet()", greet(["David", "Billy", "Lisa", "Jennifer"]));

@@ -3,7 +3,9 @@
 // The returned average should also be rounded to the nearest unit. (no decimals, please!)
 
 function calculateAverage(a, b, c, d, e) {
-  // Your code here
+  // Math.round(x) returns the value of x rounded to its nearest integer:
+  //https://www.w3schools.com/js/js_comparisons.asp
+  return Math.round((a + b + c + d + e) / 5);
 }
-
 console.log(calculateAverage(76, 60, 83, 100, 78));
+//79
