@@ -17,11 +17,17 @@ function calculateAverage(grades) {
   });
   return Math.round(sum / grades.length);
 
-  if (grade < 60) letter = "F";
-  if (grade < 70) letter = "D";
-  if (grade < 80) letter = "C";
-  if (grade < 90) letter = "B";
-  if (grade < 100) letter = "A";
+  if (grade < 60) {
+    letter = "F";
+  } else if (grade < 70) {
+    letter = "D";
+  } else if (grade < 80) {
+    letter = "C";
+  } else if (grade < 90) {
+    letter = "B";
+  } else if (grade < 100) {
+    letter = "A";
+  }
   console.log(letter);
 }
 // Call the function with [48, 95, 65, 48, 59, 78, 72, 65]
