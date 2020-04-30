@@ -1,4 +1,4 @@
-// Q10 ***
+// Q10
 // Build on what you did for Q9.
 // This time the function should return a letter grade instead of the average.
 // Here is how I calculate the grades
